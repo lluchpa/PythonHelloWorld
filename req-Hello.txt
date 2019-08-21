@@ -1,0 +1,12 @@
+mini programa para romper mano:
+
+- fichero txt con nombres de un grupo de jugadores en formato csv
+- montar partidos todos con todos
+- mostrar por pantalla las partidas
+
+
+
+------------------------------------------------------
+Objetos:
+	- jugador (id, nombre, apellidos, categoria) 					--- (1, Jose, Lluch Palop)
+	- partida (id1, id2, deporte, categoria, modalidad) --- (1, 2, Tenis, Senior, Individual)
