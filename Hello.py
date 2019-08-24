@@ -7,18 +7,19 @@ import csv
 import os.path
 
 
-#read data from file
-fileName = str(input("Input file name of resource players"))
+#check if exists file or not
+fileName = str(input("Input file name of resource players\n"))
 
 if not os.path.isfile(fileName):
     print("Please, create the file players.csv and writte formatted data!!")
     quit()
 
-#players list
-players = []
+#Create tournament
 tournament = Tournament()
 
-matches = tournament.createTournament(fileName, players)
+tournament.createTournament(fileName)
+
+matches = tournament.matches
 
 for match in matches:
     print(match.id1, " ", match.id2, " ", match.category, " ", match.mod, " ", match.sport)
